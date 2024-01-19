@@ -16,3 +16,10 @@ node環境でplotlyを使って3D-Scatterを描く
 - /usersのパスを消す
   - `server-app/app.js`
     - http://localhost:3000/users でNot Found 404が出る
+- エラー情報が出すぎなのでNotFoundのページを編集
+  - `server-app/views/error.jade`
+    - `pre #{error.stack}`の行を消す
+    - 消してもいいけど、行コメントアウト
+      - 行コメントアウトは`//`
+    - 「Not Found 404」しか出なくなってOK
+    - users以外も試しておく
