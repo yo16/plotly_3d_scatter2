@@ -9,4 +9,10 @@ node環境でplotlyを使って3D-Scatterを描く
   - `npm install -g express-generator`
   - 一時的にローカルトップにnode環境を作って、次のコマンド実行したら物理削除してもよかったかも
 - `express server-app`
-
+- `npm install`
+  - package.jsonをインストール
+  - 試しに`npm start`
+    - http://localhost:3000/ でExpressが出てきてOK
+- /usersのパスを消す
+  - `server-app/app.js`
+    - http://localhost:3000/users でNot Found 404が出る
