@@ -36,10 +36,25 @@ node環境でplotlyを使って3D-Scatterを描く
 - `server-app/routes/index.js`を編集
   - res.renderの行を消して
   - `sendFile`で静的な`public/index.html`を見る処理を追加
-  ```
-/* GET home page. */
+```
 router.get('/', function(req, res, next) {
   //res.render('index', { title: 'Express' });
   res.sendFile("index.html");
 });
-  ```
+```
+
+# Render
+- Root Directory
+  - server-app
+- Runtime
+  - Node
+- Build Command
+  - yarn
+- Start Command
+  - npm start
+- Environ Variables
+  - DEBUG=server-app:*
+
+## 参考
+- [Deploy a Node Express App | Render Docs](https://docs.render.com/deploy-node-express-app)
+
