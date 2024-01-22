@@ -2,6 +2,7 @@
   "name": "scatter-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "main": "index.html",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
